@@ -1,0 +1,16 @@
+Start: Thur, 30 April 2015 09:15:00 
+End: Thur, 30 April 2015 12:30:00 
+Tasks: Reading and watching videos for this unit
+
+Start: Fri, 1 May 2015 09:00:00 
+End: Fri, 1 May 2015 10:30:00 
+Tasks: Attended tutor session on php by Eric Ianni
+
+Start: Fri, 1 May 2015 14:40:00 
+End: Fri, 1 May 2015 16:30:00 
+Tasks: More reading about php on particular aspects related to assignment; Worked on multtable.php 
+
+
+Start: Fri, 1 May 2015 06:00:00 
+End: Fri, 1 May 2015 06:45:00 
+Tasks: Completed multtable.php; more unexpected simple errors due to slight differences in php style compared with C and javascript
