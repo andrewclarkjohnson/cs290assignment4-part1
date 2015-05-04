@@ -3,6 +3,17 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 // var_dump($_GET);
 // var_dump($_POST);
+?>
+
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<meta charset="UTF-8">
+  <title>Multiplication Table</title>
+ </head>
+ <body>
+
+<?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') 
 {
@@ -24,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
 	}
 	else 
 	{
-		$passed_parameters=null);
+		$passed_parameters=null;
 
 	}
 	$json_parameters = array("type"=>"POST","parameters"=>$passed_parameters);
@@ -65,11 +76,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET')
 // echo htmlspecialchars(print_r($_REQUEST, true));
 ?>
 
-<!DOCTYPE html>
-<html>
- <head>
-  <title>Multiplication Table</title>
- </head>
- <body>
+
 </body>
 </html>

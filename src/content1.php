@@ -1,14 +1,7 @@
 <?php
 session_start();
-?>
-<!DOCTYPE html>
-<html>
- <head>
-  <title>Content #1</title>
- </head>
- <body>
-
-<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 function display_content1() {
 	
@@ -17,6 +10,16 @@ function display_content1() {
 
 if ( (!empty($_POST)) || (isset($_SESSION['times_visited'])))
 {
+	?>
+	<!DOCTYPE html>
+	<html>
+	 <head>
+	 	<meta charset="UTF-8">
+	  <title>Content #1</title>
+	 </head>
+	 <body>
+
+	<?php
 	if (!empty($_POST))
 	{
 		$passed=$_POST;
@@ -29,7 +32,7 @@ if ( (!empty($_POST)) || (isset($_SESSION['times_visited'])))
 		{
 			if (!isset($_SESSION['times_visited'])) 
 			{
-				$_SESSION['times_visited'] = 0;
+				$_SESSION['times_visited'] = -1;
 			} 
 		}
 
@@ -46,15 +49,14 @@ if ( (!empty($_POST)) || (isset($_SESSION['times_visited'])))
 		display_content1();
 	}
 					
-
+	?>
+	</body>
+	</html>
+	<?php
 }
 else
 {
-	header("Location: http://localhost:8888/assignment4-part1/src/login.php",true);
+	header("Location: https://web.engr.oregonstate.edu/~johnsan3/CS290/ass4/login.php",true);
 	exit();
 }
-
 ?>
-
-</body>
-</html>

@@ -10,7 +10,8 @@ ini_set('display_errors', 1);
 <!DOCTYPE html>
 <html>
  <head>
-  <title>Multiplication Table</title>
+ 	<meta charset="UTF-8">
+  	<title>Multiplication Table</title>
  </head>
  <body>
 
@@ -43,23 +44,7 @@ if(!isset($_GET["min-multiplicand"],$_GET["max-multiplicand"],
 		$min_multiplier =  $_GET["min-multiplier"] ;
 		// echo("**". $_GET["max-multiplier"]. "**");
 		$max_multiplier =  $_GET["max-multiplier"] ;
-		// echo("**". $max_multiplier. "**");
-// echo (is_int($min_multiplicand));
-// if(is_int($min_multiplicand)) {echo("integer<br>"); } else {echo("NOT integer<br>"); }
-// if(is_int($max_multiplicand)) {echo("integer<br>"); } else {echo("NOT integer<br>"); }
-// if(is_numeric($_GET["min-multiplier"])) {echo("integer<br>"); } else {echo("NOT integer<br>"); }
-// if(is_numeric($_GET["max-multiplier"])) {echo("integer<br>"); } else {echo("NOT integer<br>"); }
-// echo ("<br>");
-// echo (is_int($max_multiplicand));
-// echo ("<br>");
-// echo (is_int($min_multiplier));
-// echo ("<br>");
-// echo (is_int($max_multiplier));
-// echo ("<br>");
-// 		echo(gettype($min_multiplicand));
-// echo(gettype($max_multiplicand));
-// echo(gettype($min_multiplicand));
-// echo(gettype($max_multiplicand));
+
 		if ((!is_numeric($min_multiplicand)) || (!is_numeric($max_multiplicand)) ||
 			(!is_numeric($min_multiplier)) || (!is_numeric($max_multiplier)))
 			{
@@ -85,7 +70,7 @@ if(!isset($_GET["min-multiplicand"],$_GET["max-multiplicand"],
 			{
 				// echo ("Everything checks out so far.");
 				?>
-				<table>
+				<table >
 					<tbody>
 						<?php
 
@@ -97,23 +82,22 @@ if(!isset($_GET["min-multiplicand"],$_GET["max-multiplicand"],
 									// header col
 									if( ($i>($min_multiplicand-1)) && ($j==($min_multiplier-1)))
 									{
-										echo ("<td>".($i));
+										echo ("<td><b>".($i))."</b>";
 									}
 									//header row
 									elseif ( ($i==($min_multiplicand-1)) && ($j>($min_multiplier-1)))
 									{
-										echo ("<td>".($j));
+										echo ("<td><b>".($j))."</b>";
 									}
+									//top left corner should be blank
 									elseif ( ($i==($min_multiplicand-1)) && ($j==($min_multiplier-1)))
 									{
 										echo ("<td>");
 									}
 									else 
 									{
-										// echo ("<td>".$j*$i);
 										echo ("<td>".($i* $j));
 									}
-									//echo("<td>".$i);
 								}
 
 						}

@@ -15,6 +15,7 @@ if(!empty($_GET))
 <!DOCTYPE html>
 <html>
  <head>
+ 	<meta charset="UTF-8">
   <title>Log In</title>
  </head>
  <body>
