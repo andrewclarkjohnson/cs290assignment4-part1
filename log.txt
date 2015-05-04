@@ -10,7 +10,27 @@ Start: Fri, 1 May 2015 14:40:00
 End: Fri, 1 May 2015 16:30:00 
 Tasks: More reading about php on particular aspects related to assignment; Worked on multtable.php 
 
-
-Start: Fri, 1 May 2015 06:00:00 
-End: Fri, 1 May 2015 06:45:00 
+Start: Sat, 2 May 2015 06:00:00 
+End: Sat, 2 May 2015 06:45:00 
 Tasks: Completed multtable.php; more unexpected simple errors due to slight differences in php style compared with C and javascript
+
+Start: Sat, 2 May 2015 08:00:00 
+End: Sat, 2 May 2015 10:45:00 
+Tasks: Reading about loopback.php assignment; rewatched videos; completed code
+
+Start: Sat, 2 May 2015 12:30:00 
+End: Sat, 2 May 2015 14:15:00 
+Tasks: Got login.php, content1.php and content2.php files working
+
+Start: Sat, 2 May 2015 16:00:00 
+End: Sat, 2 May 2015 17:15:00 
+Tasks: Reviewing for Javascript Quiz
+
+Start: Sun, 3 May 2015 08:30:00 
+End: Sun, 3 May 2015 11:15:00 
+Tasks: Reviewing for Javascript Quiz
+
+Start: Sun, 3 May 2015 12:30:00 
+End: Sun, 3 May 2015 13:15:00 
+Tasks: Uploaded to FLIP server; found mistake in header in content1 and content2 files that didn't exist on my localhost; had to do with extra spaces before header 
+
